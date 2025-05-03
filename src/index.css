@@ -12,7 +12,11 @@
 /*  -webkit-font-smoothing: antialiased;*/
 /*  -moz-osx-font-smoothing: grayscale;*/
 /*}*/
-
+body {
+    font-family: 'Vazir', sans-serif; /* or 'Noto Sans Arabic' */
+    direction: rtl;
+    text-align: right;
+}
 /*a {*/
 /*  font-weight: 500;*/
 /*  color: #646cff;*/
