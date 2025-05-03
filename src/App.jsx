@@ -1,5 +1,5 @@
 import './App.css'
-import Header from "./Components/Shared/Header.jsx";
+import Header from "./Components/Shared/Header/Header.jsx";
 
 function App() {
   return (
@@ -7,7 +7,9 @@ function App() {
           className="min-h-screen bg-cover bg-no-repeat bg-center"
           style={{ backgroundImage: 'url("src/assets/background.png")' }}
       >
-          <Header />
+          <div className={"relative"}>
+              <Header />
+          </div>
 
       </div>
 

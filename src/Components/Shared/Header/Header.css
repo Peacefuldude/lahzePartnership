@@ -1,0 +1,21 @@
+@media screen and (max-width: 700px) {
+    .header-list-container{
+        display: none!important;
+    }
+
+    .header-hamburger-menu{
+        /*display: block!important;*/
+    }
+    .header-hamburger-menu-icon {
+        display: block!important;
+    }
+    .header-mobile-menu {
+        display: block!important;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .header-logo svg{
+        width: 32px!important;
+    }
+}
