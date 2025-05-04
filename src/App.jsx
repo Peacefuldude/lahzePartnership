@@ -1,19 +1,19 @@
 import './App.css'
 import Header from "./Components/Shared/Header/Header.jsx";
+import Footer from "./Components/Shared/Footer/Footer.jsx";
 
 function App() {
-  return (
-      <div
-          className="min-h-screen bg-cover bg-no-repeat bg-center"
-          style={{ backgroundImage: 'url("src/assets/background.png")' }}
-      >
-          <div className={"relative"}>
-              <Header />
-          </div>
+    return (
+        <div
+            className="min-h-screen bg-cover bg-no-repeat bg-center flex flex-col justify-between"
+            style={{backgroundImage: 'url("src/assets/background.png")'}}
+        >
+            <Header/>
+            <Footer/>
 
-      </div>
+        </div>
 
-  )
+    )
 }
 
 export default App
