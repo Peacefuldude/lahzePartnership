@@ -1,18 +1,44 @@
+.benefitsSection-shadow {
+    svg {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+
 @media screen and (max-width: 700px) {
-    .giftCardSection-buttons{
-        display: flex!important;
-        align-items: center!important;
+    .giftCardSection-buttons {
+        display: flex !important;
+        align-items: center !important;
         flex-direction: column-reverse;
-        margin-top: 16px!important;
-        button{
-            width: 70%!important;
+        margin-top: 16px !important;
+
+        button {
+            width: 70% !important;
         }
     }
 
-    .featuredBrandsSection-brands{
-        img{
-            width: 25%!important;
-            height: 25%!important;
+    .featuredBrandsSection-brands {
+        img {
+            width: 25% !important;
+            height: 25% !important;
         }
     }
+    .benefitsSection-icon{
+        width: 255px !important;
+    }
+    .benefitsSection-icon,
+    .benefitsSection-shadow {
+        max-width: 300px;
+    }
+
+    .benefitsSection-container {
+        flex-direction: column;
+    }
+
+
 }
+
