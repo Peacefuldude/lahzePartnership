@@ -9,6 +9,7 @@ function HomePage() {
             <GiftCardSection/>
             <FeaturedBrandsSection/>
             <BenefitsSection/>
+            <BenefitsSection/>
         </div>
     )
 }

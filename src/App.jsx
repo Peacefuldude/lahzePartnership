@@ -7,7 +7,7 @@ function App() {
     return (
         <div
             className="min-h-screen bg-cover bg-no-repeat bg-center flex flex-col justify-between"
-            // style={{backgroundImage: 'url("src/assets/background.png")'}}
+            style={{backgroundImage: 'url("src/assets/background.png")'}}
         >
             <Header/>
             <HomePage/>

@@ -209,7 +209,7 @@ function BenefitsSection() {
                 </div>
                 <div className="benefitsSection-description">
                     <div className={"font-bold text-[1.8rem] mb-6"}>لحظه کارت به کسب و کار شما چه کمکی میکند ؟</div>
-                    <div className="benefitsSection-group flex gap-3 my-2">
+                    <div className="benefitsSection-group items-center flex gap-3 my-2">
                         <div>
                             <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -221,7 +221,7 @@ function BenefitsSection() {
                             افزایش فروش و جذب مشتری جدید
                         </div>
                     </div>
-                    <div className="benefitsSection-group flex gap-3 my-2">
+                    <div className="benefitsSection-group items-center flex gap-3 my-2">
                         <div>
                             <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -234,7 +234,7 @@ function BenefitsSection() {
                             ابزار مؤثر برای وفادارسازی مشتریان
                         </div>
                     </div>
-                    <div className="benefitsSection-group flex gap-3 my-2">
+                    <div className="benefitsSection-group items-center flex gap-3 my-2">
                         <div>
                             <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -246,7 +246,7 @@ function BenefitsSection() {
                             تبلیغ برند بدون هزینه‌ی مستقیم
                         </div>
                     </div>
-                    <div className="benefitsSection-group flex gap-3 my-2">
+                    <div className="benefitsSection-group items-center flex gap-3 my-2">
                         <div>
                             <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -258,7 +258,7 @@ function BenefitsSection() {
                             قابل استفاده در کمپین‌های بازاریابی متنوع
                         </div>
                     </div>
-                    <div className="benefitsSection-group flex gap-3 my-2">
+                    <div className="benefitsSection-group items-center flex gap-3 my-2">
                         <div>
                             <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
