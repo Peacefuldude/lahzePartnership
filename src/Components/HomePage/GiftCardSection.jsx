@@ -3,12 +3,11 @@ import './HomePage.css'
 
 function GiftCardSection() {
     return (
-        <div className={"p-[2em]"}>
+        <div className={"p-[2em] "}>
             <div className="giftcards">
                 <div className="flex justify-center">
                     <div
-                        className="flex space-x-[-100px] scale-[1.2] sm:scale-[0.9] md:scale-100 origin-center items-end">
-                        <img src="../src/assets/cards/Frame 8719.png" className="w-53 h-55 z-10 mt-4"/>
+                        className="flex space-x-[-100px] scale-[1.2] sm:scale-[0.9] md:scale-100 origin-center items-end">                    <img src="../src/assets/cards/Frame 8719.png" className="w-53 h-55 z-10 mt-4"/>
                         <img src="../src/assets/cards/Frame 8720.png" className="w-53 z-20 mt-1"/>
                         <img src="../src/assets/cards/Frame 8721.png" className="w-53 h-65 z-30 -mt-4"/>
                         <img src="../src/assets/cards/8.png" className="w-53 z-20 mt-1"/>
@@ -42,7 +41,7 @@ function GiftCardSection() {
                     hover:cursor-pointer hover:shadow-xl
                     hover:brightness-110 hover:saturate-90
                     transition-all duration-300 ease-in-out
-                ">
+                    ">
                     <div>درخواست همکاری</div>
                 </button>
             </div>
