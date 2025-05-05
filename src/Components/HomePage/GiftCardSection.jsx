@@ -3,7 +3,7 @@ import './HomePage.css'
 
 function GiftCardSection() {
     return (
-        <div className={"p-[2em] "}>
+        <div className={"p-[3em] "}>
             <div className="giftcards">
                 <div className="flex justify-center">
                     <div
