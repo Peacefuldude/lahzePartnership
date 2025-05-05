@@ -1,0 +1,11 @@
+@media screen and (max-width: 700px) {
+    .giftCardSection-buttons{
+        display: flex!important;
+        align-items: center!important;
+        flex-direction: column-reverse;
+        margin-top: 16px!important;
+        button{
+            width: 70%!important;
+        }
+    }
+}
