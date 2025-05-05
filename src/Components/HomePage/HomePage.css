@@ -44,5 +44,23 @@
         height: 15px !important;
     }
 
+    .featuresSection-icon{
+        width: 255px !important;
+    }
+    .featuresSection-icon,
+    .benefitsSection-shadow {
+        max-width: 300px;
+    }
+
+    .featuresSection-container {
+        flex-direction: column-reverse;
+    }
+
+    .featuresSection-group svg{
+        width: 15px !important;
+        height: 15px !important;
+    }
+
+
 }
 
