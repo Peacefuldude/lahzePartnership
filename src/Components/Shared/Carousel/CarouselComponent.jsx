@@ -3,35 +3,61 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import './CarouselComponent.css';
 
-// Custom button group component
 const ButtonGroup = ({ next, previous, ...rest }) => {
     const { carouselState: { currentSlide, slidesToShow } } = rest;
     const totalSlides = rest.carouselState.totalItems;
-
+    const isMobile = rest.carouselState.deviceType === 'tablet' || rest.carouselState.deviceType === 'mobile';
+    console.log(rest.carouselState.deviceType)
     return (
-        <>
-            <button
-                className={`carousel-button prev-button ${currentSlide === 0 ? 'disabled' : ''}`}
-                onClick={() => previous()}
-                disabled={currentSlide === 0}
-            >
-                <svg width="63" height="62" viewBox="0 0 63 62" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M29.134 21.1385L19.9688 30.3039M19.9688 30.3039L29.134 39.4691M19.9688 30.3039H42.8818" stroke="#501A60" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-            </button>
-            <button
-                className={`carousel-button next-button ${currentSlide >= totalSlides - slidesToShow ? 'disabled' : ''}`}
-                onClick={() => next()}
-                disabled={currentSlide >= totalSlides - slidesToShow}
-            >
-                <svg width="62" height="62" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M33.0613 21.1387L42.2266 30.3039M42.2266 30.3039L33.0613 39.4692M42.2266 30.3039H19.3135" stroke="#501A60" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-            </button>
-        </>
+        <div className={`carousel-button-container ${isMobile ? 'mobile' : 'desktop'}`}>
+            {isMobile ? (
+                <>
+                    <button
+                        className={`carousel-button prev-button ${currentSlide === 0 ? 'disabled' : ''}`}
+                        onClick={() => previous()}
+                        disabled={currentSlide === 0}
+                    >
+                        <svg width="40" height="40" viewBox="0 0 62 62" fill="none">
+                            <path d="M33.0613 21.1387L42.2266 30.3039M42.2266 30.3039L33.0613 39.4692M42.2266 30.3039H19.3135" stroke="#501A60" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+                        </svg>
+                    </button>
+                    <button
+                        className={`carousel-button next-button ${currentSlide >= totalSlides - slidesToShow ? 'disabled' : ''}`}
+                        onClick={() => next()}
+                        disabled={currentSlide >= totalSlides - slidesToShow}
+                    >
+                        <svg width="40" height="40" viewBox="0 0 63 62" fill="none">
+                            <path d="M29.134 21.1385L19.9688 30.3039M19.9688 30.3039L29.134 39.4691M19.9688 30.3039H42.8818" stroke="#501A60" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+                        </svg>
+
+                    </button>
+                </>
+            ) : (
+                <div className="center-buttons">
+                    <button
+                        className={`carousel-button ${currentSlide === 0 ? 'disabled' : ''}`}
+                        onClick={() => previous()}
+                        disabled={currentSlide === 0}
+                    >
+                        <svg width="40" height="40" viewBox="0 0 62 62" fill="none">
+                            <path d="M33.0613 21.1387L42.2266 30.3039M42.2266 30.3039L33.0613 39.4692M42.2266 30.3039H19.3135" stroke="#501A60" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+                        </svg>
+                    </button>
+                    <button
+                        className={`carousel-button ${currentSlide >= totalSlides - slidesToShow ? 'disabled' : ''}`}
+                        onClick={() => next()}
+                        disabled={currentSlide >= totalSlides - slidesToShow}
+                    >
+                        <svg width="40" height="40" viewBox="0 0 63 62" fill="none">
+                            <path d="M29.134 21.1385L19.9688 30.3039M19.9688 30.3039L29.134 39.4691M19.9688 30.3039H42.8818" stroke="#501A60" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+                        </svg>
+
+                    </button>
+                </div>
+            )}
+        </div>
     );
 };
-// Main carousel component
 const CarouselComponent = () => {
     const testimonials = [
         { id: 1, name: "رستوان چیلی", text: "همکاری با لحظه کارت برای ما تجربه‌ای سریع، حرفه‌ای و فراتر از انتظار بود. تیمی خلاق و مسئولیت‌پذیر که همیشه یک قدم جلوتر فکر می‌کنند.", rating: 4, avatar: "../src/assets/carousel/logo.png" },
@@ -61,22 +87,22 @@ const CarouselComponent = () => {
         </svg>
     );
 
-    const responsive = {
-        desktop: {
-            breakpoint: { max: 3000, min: 1024 },
-            items: 3
-        },
-        tablet: {
-            breakpoint: { max: 1024, min: 464 },
-            items: 2
-        },
-        mobile: {
-            breakpoint: { max: 464, min: 0 },
-            items: 1
-        }
-    };
+        const responsive = {
+            desktop: {
+                breakpoint: { max: 3000, min: 1024 },
+                items: 3
+            },
+            tablet: {
+                breakpoint: { max: 1024, min: 768 },
+                items: 2
+            },
+            mobile: {
+                breakpoint: { max: 768, min: 0 },
+                items: 1
+            }
+        };
 
-    return (
+        return (
         <div className="carousel-wrapper">
             <Carousel
                 responsive={responsive}
@@ -88,9 +114,9 @@ const CarouselComponent = () => {
                 itemClass="carousel-item"
             >
                 {testimonials.map((testimonial) => (
-                    <div key={testimonial.id} className="testimonial-card">
-                        <div className="flex flex-row-reverse justify-between items-center">
-                            <img src={testimonial.avatar} alt={testimonial.name} />
+                    <div key={testimonial.id} className="testimonial-card flex justify-between flex-col">
+                        <div className="flex flex-row justify-between items-center">
+                            <img className={"carousel-brand-icon"} src={testimonial.avatar} alt={testimonial.name} />
                             <div className="font-bold text-[1.3rem]">{testimonial.name}</div>
                         </div>
                         <div className="carousel-text font-semibold p-2">{testimonial.text}</div>

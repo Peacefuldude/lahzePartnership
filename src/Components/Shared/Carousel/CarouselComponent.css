@@ -5,32 +5,60 @@
     padding: 0 60px;
 }
 
-.carousel-button {
+/* Mobile buttons (on sides) */
+.carousel-button-container.mobile {
     position: absolute;
+    width: 100%;
     top: 50%;
+    left: 0;
     transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    pointer-events: none;
+    z-index: 2; /* Ensure buttons stay above cards */
+}
+.carousel-brand-icon{
+    width: 39px !important;
+}
+.carousel-button-container.mobile .carousel-button {
+    pointer-events: auto;
+    position: relative;
     background: transparent;
     border: none;
-    padding: 0;
-    cursor: pointer;
-    z-index: 1;
+    width: 40px;
+    height: 40px;
 }
-
-.carousel-button.prev-button {
+.carousel-item{
+    padding: 10px;
+}
+/* Desktop/tablet buttons (centered bottom) */
+.carousel-button-container.desktop {
+    position: absolute;
+    bottom: 20px;
     left: 0;
-}
-
-.carousel-button.next-button {
     right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    z-index: 2; /* Ensure buttons stay above cards */
 }
 
+.carousel-button-container.desktop .carousel-button {
+    background: transparent;
+    border: none;
+    width: 40px;
+    height: 40px;
+}
+
+/* Common styles */
 .carousel-button.disabled {
     opacity: 0.5;
     cursor: not-allowed;
 }
 
 .carousel-container {
-    padding: 20px 0;
+    padding-bottom: 80px; /* Space for bottom buttons */
 }
 
 .testimonial-card {
@@ -42,31 +70,22 @@
     padding: 20px;
     box-shadow: 0 4px 12px rgba(138, 43, 226, 0.2),
     0 8px 24px rgba(138, 43, 226, 0.15);
-    direction: rtl;
-    text-align: right;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    position: relative; /* Add this */
+    z-index: 1; /* Add this */
+    transform: translateZ(0); /* Force hardware acceleration */
 }
 
+/* Mobile adjustments */
 @media (max-width: 900px) {
     .carousel-wrapper {
         padding: 0 40px;
     }
-
+    .carousel-container {
+        padding-bottom: 20px;
+    }
     .testimonial-card {
         width: 184px;
         height: auto;
         min-height: 250px;
-    }
-
-    .carousel-button {
-        width: 40px;
-        height: 40px;
-    }
-
-    .carousel-button svg {
-        width: 40px;
-        height: 40px;
     }
 }
