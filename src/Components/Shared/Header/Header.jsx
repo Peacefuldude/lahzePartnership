@@ -5,7 +5,7 @@ import MobileMenu from "./MobileMenu.jsx";
 
 function Header() {
     return (
-        <div className="p-[2em]">
+        <div className="p-[2em] absolute -top-0 z-[9999999] w-full ">
             <div className={"flex justify-between items-center"}>
                 <div className={"header-logo"}>
                     <svg width="40" height="42" viewBox="0 0 45 47" fill="none" xmlns="http://www.w3.org/2000/svg">

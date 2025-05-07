@@ -1,0 +1,72 @@
+.carousel-wrapper {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 60px;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.carousel-button.prev-button {
+    left: 0;
+}
+
+.carousel-button.next-button {
+    right: 0;
+}
+
+.carousel-button.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.carousel-container {
+    padding: 20px 0;
+}
+
+.testimonial-card {
+    width: 258px;
+    height: 299px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 32px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(138, 43, 226, 0.2),
+    0 8px 24px rgba(138, 43, 226, 0.15);
+    direction: rtl;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media (max-width: 900px) {
+    .carousel-wrapper {
+        padding: 0 40px;
+    }
+
+    .testimonial-card {
+        width: 184px;
+        height: auto;
+        min-height: 250px;
+    }
+
+    .carousel-button {
+        width: 40px;
+        height: 40px;
+    }
+
+    .carousel-button svg {
+        width: 40px;
+        height: 40px;
+    }
+}

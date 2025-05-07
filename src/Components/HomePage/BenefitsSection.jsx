@@ -2,14 +2,7 @@ import React from 'react'
 
 function BenefitsSection() {
     return (
-        <div className={"flex justify-between items-center relative p-[3em]"}>
-            {/*<div className="benefitsSection-shadow">*/}
-            {/*    <div className={"absolute right-0 top-0"}>*/}
-            {/*        <svg width="578" height="500" viewBox="0 0 578 500" fill="none" xmlns="http://www.w3.org/2000/svg">*/}
-            {/*            <path fill-rule="evenodd" clip-rule="evenodd" d="M335.279 29.9376C421.993 6.77596 533.471 -29.8622 590.011 43.332C646.634 116.634 584.937 222.198 551.629 310.014C526.727 375.666 489.138 432.384 429.918 465.405C367.398 500.266 297.714 509.661 229.623 489.564C138.356 462.626 7.99173 438.355 0.311192 338.606C-7.43193 238.045 131.233 212.979 203.219 146.645C248.722 104.715 276.733 45.5755 335.279 29.9376Z" fill="#E67BE6" fill-opacity="0.8"/>*/}
-            {/*        </svg>*/}
-            {/*    </div>*/}
-            {/*</div>*/}
+        <div className={"flex justify-between items-center relative p-[3em] "}>
             <div className="benefitsSection-container flex justify-between z-10 w-full items-center" >
                 <div className="benefitsSection-icon">
                     <svg className={"w-full max-w-[500px] h-auto block mt-0 mx-auto my-0"} width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -208,8 +201,8 @@ function BenefitsSection() {
                     </svg>
                 </div>
                 <div className="benefitsSection-description">
-                    <div className={"font-bold text-[1.8rem] mb-6"}>لحظه کارت به کسب و کار شما چه کمکی میکند ؟</div>
-                    <div className="benefitsSection-group items-center flex gap-3 my-2">
+                    <div className={"font-bold text-[1.9rem] md:text-[2rem] mb-6"}>لحظه کارت به کسب و کار شما چه کمکی میکند ؟</div>
+                    <div className="benefitsSection-group items-center flex gap-3 text[2rem] my-2">
                         <div>
                             <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -217,11 +210,11 @@ function BenefitsSection() {
                                     fill="#E67BE6"/>
                             </svg>
                         </div>
-                        <div className={"font-semibold"}>
+                        <div className={"font-semibold text-[1.5rem] sm:text-[1.3em]"}>
                             افزایش فروش و جذب مشتری جدید
                         </div>
                     </div>
-                    <div className="benefitsSection-group items-center flex gap-3 my-2">
+                    <div className="benefitsSection-group items-center flex gap-3 text[2rem] my-2">
                         <div>
                             <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -229,12 +222,12 @@ function BenefitsSection() {
                                     fill="#E67BE6"/>
                             </svg>
                         </div>
-                        <div className={"font-semibold"}>
+                        <div className={"font-semibold text-[1.5rem] sm:text-[1.3em]"}>
 
                             ابزار مؤثر برای وفادارسازی مشتریان
                         </div>
                     </div>
-                    <div className="benefitsSection-group items-center flex gap-3 my-2">
+                    <div className="benefitsSection-group items-center flex gap-3 text[2rem] my-2">
                         <div>
                             <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -242,11 +235,11 @@ function BenefitsSection() {
                                     fill="#E67BE6"/>
                             </svg>
                         </div>
-                        <div className={"font-semibold"}>
+                        <div className={"font-semibold text-[1.5rem] sm:text-[1.3em]"}>
                             تبلیغ برند بدون هزینه‌ی مستقیم
                         </div>
                     </div>
-                    <div className="benefitsSection-group items-center flex gap-3 my-2">
+                    <div className="benefitsSection-group items-center flex gap-3 text[2rem] my-2">
                         <div>
                             <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -254,11 +247,11 @@ function BenefitsSection() {
                                     fill="#E67BE6"/>
                             </svg>
                         </div>
-                        <div className={"font-semibold"}>
+                        <div className={"font-semibold text-[1.5rem] sm:text-[1.3em]"}>
                             قابل استفاده در کمپین‌های بازاریابی متنوع
                         </div>
                     </div>
-                    <div className="benefitsSection-group items-center flex gap-3 my-2">
+                    <div className="benefitsSection-group items-center flex gap-3 text[2rem] my-2">
                         <div>
                             <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -266,7 +259,7 @@ function BenefitsSection() {
                                     fill="#E67BE6"/>
                             </svg>
                         </div>
-                        <div className={"font-semibold"}>
+                        <div className={"font-semibold text-[1.5rem] sm:text-[1.3em]"}>
                             گزارش‌گیری و مدیریت هوشمند کارت‌ها
                         </div>
                     </div>

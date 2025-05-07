@@ -3,20 +3,20 @@ import './HomePage.css'
 
 function GiftCardSection() {
     return (
-        <div className={"p-[3em] "}>
-            <div className="giftcards">
+        <div className={"p-[6em] lg:pt-[9em] pt-[11em]"}>
+            <div className="giftcards p-[3em] ">
                 <div className="flex justify-center">
-                    <div
-                        className="flex space-x-[-100px] scale-[1.2] sm:scale-[0.9] md:scale-100 origin-center items-end">                    <img src="../src/assets/cards/Frame 8719.png" className="w-53 h-55 z-10 mt-4"/>
+                    <div className="flex space-x-[-100px] scale-[1] sm:scale-[1.1] md:scale-[1.2] lg:scale-[1.4] origin-center items-end">
+                    <img src="../src/assets/cards/Frame 8719.png" className="w-50 h-55 z-10 mt-4"/>
                         <img src="../src/assets/cards/Frame 8720.png" className="w-53 z-20 mt-1"/>
                         <img src="../src/assets/cards/Frame 8721.png" className="w-53 h-65 z-30 -mt-4"/>
                         <img src="../src/assets/cards/8.png" className="w-53 z-20 mt-1"/>
-                        <img src="../src/assets/cards/Frame 8724.png" className="w-53 h-55 z-10 mt-4"/>
+                        <img src="../src/assets/cards/Frame 8724.png" className="w-50 h-55 z-10 mt-4"/>
                     </div>
                 </div>
             </div>
             <div
-                className="giftCardSection-header flex justify-center justify-center w-full font-bold text-[2.2rem] p-6 pb-0">
+                className="giftCardSection-header flex justify-center justify-center w-full font-bold text-[2.1rem] md:text-[4rem] md:p-6 pb-0">
                 <div>
                     ارائه‌ی زیرساخت فروش
                 </div>
@@ -24,12 +24,12 @@ function GiftCardSection() {
                     گیفت‌کارت
                 </div>
             </div>
-            <div className="giftCardSection-descriptions text-center text-[1.2rem]">
+            <div className="giftCardSection-descriptions text-center text-[1.5rem] md:text-[2rem] md:pt-[0.5em]">
                 <div>
                     مخصوص آژانس‌ها و کسب‌وکارهای کوچک
                 </div>
             </div>
-            <div className="giftCardSection-buttons text-center">
+            <div className="giftCardSection-buttons text-center md:pt-[2.5em]">
                 <button
                     className="bg-white h-[48px] w-[174px] m-2 rounded-full hover:cursor-pointer hover:shadow-xl transition-shadow duration-300 ease-in-out">
                     <div>

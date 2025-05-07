@@ -3,17 +3,10 @@ import React from 'react'
 function FeaturesSection() {
     return (
         <div className={"flex justify-between items-center relative p-[3em]"}>
-            {/*<div className="featuresSection-shadow">*/}
-            {/*    <div className={"absolute right-0 top-0"}>*/}
-            {/*        <svg width="578" height="500" viewBox="0 0 578 500" fill="none" xmlns="http://www.w3.org/2000/svg">*/}
-            {/*            <path fill-rule="evenodd" clip-rule="evenodd" d="M335.279 29.9376C421.993 6.77596 533.471 -29.8622 590.011 43.332C646.634 116.634 584.937 222.198 551.629 310.014C526.727 375.666 489.138 432.384 429.918 465.405C367.398 500.266 297.714 509.661 229.623 489.564C138.356 462.626 7.99173 438.355 0.311192 338.606C-7.43193 238.045 131.233 212.979 203.219 146.645C248.722 104.715 276.733 45.5755 335.279 29.9376Z" fill="#E67BE6" fill-opacity="0.8"/>*/}
-            {/*        </svg>*/}
-            {/*    </div>*/}
-            {/*</div>*/}
             <div className="featuresSection-container flex justify-between z-10 w-full items-center" >
                 <div className="featuresSection-description">
-                    <div className={"font-bold text-[1.8rem] mb-6"}>نمایندگی فروش گیفت‌کارت برای آژانس‌های تبلیغاتی؟</div>
-                    <div className="featuresSection-group items-center flex gap-3 my-2">
+                    <div className={"font-bold text-[1.9rem] md:text-[2rem] mb-6"}>نمایندگی فروش گیفت‌کارت برای آژانس‌های تبلیغاتی</div>
+                    <div className="featuresSection-group items-center flex gap-3 text[2rem] my-2">
                         <div>
                             <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -21,10 +14,11 @@ function FeaturesSection() {
                                     fill="#E67BE6"/>
                             </svg>
                         </div>
-                        <div className={"font-semibold"}>
+                        <div className={"font-semibold text-[1.5rem] sm:text-[1.3em]"}>
+
                             دسترسی به پنل اختصاصی با نام برند شما                        </div>
                     </div>
-                    <div className="featuresSection-group items-center flex gap-3 my-2">
+                    <div className="featuresSection-group items-center flex gap-3 text[2rem] my-2">
                         <div>
                             <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -32,11 +26,10 @@ function FeaturesSection() {
                                     fill="#E67BE6"/>
                             </svg>
                         </div>
-                        <div className={"font-semibold"}>
-
+                        <div className={"font-semibold text-[1.5rem] sm:text-[1.3em]"}>
                             امکان صدور و فروش مستقیم گیفت‌کارت به کسب‌وکارهای طرف همکاری‌تان                        </div>
                     </div>
-                    <div className="featuresSection-group items-center flex gap-3 my-2">
+                    <div className="featuresSection-group items-center flex gap-3 text[2rem] my-2">
                         <div>
                             <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -44,10 +37,10 @@ function FeaturesSection() {
                                     fill="#E67BE6"/>
                             </svg>
                         </div>
-                        <div className={"font-semibold"}>
+                        <div className={"font-semibold text-[1.5rem] sm:text-[1.3em]"}>
                             افزایش ارزش خدمات بازاریابی شما با یک ابزار جذاب                        </div>
                     </div>
-                    <div className="featuresSection-group items-center flex gap-3 my-2">
+                    <div className="featuresSection-group items-center flex gap-3 text[2rem] my-2">
                         <div>
                             <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -55,10 +48,10 @@ function FeaturesSection() {
                                     fill="#E67BE6"/>
                             </svg>
                         </div>
-                        <div className={"font-semibold"}>
+                        <div className={"font-semibold text-[1.5rem] sm:text-[1.3em]"}>
                             درآمد مستقل از فروش گیفت‌کارت به‌عنوان نماینده‌ی رسمی لحظه‌کارت                        </div>
                     </div>
-                    <div className="featuresSection-group items-center flex gap-3 my-2">
+                    <div className="featuresSection-group items-center flex gap-3 text[2rem] my-2">
                         <div>
                             <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -66,9 +59,10 @@ function FeaturesSection() {
                                     fill="#E67BE6"/>
                             </svg>
                         </div>
-                        <div className={"font-semibold"}>
+                        <div className={"font-semibold text-[1.5rem] sm:text-[1.3em]"}>
                             پشتیبانی فنی، گزارش‌گیری و API قابل‌اعتماد برای یکپارچه‌سازی آسان                        </div>
                     </div>
+
                 </div>
                 <div className="featuresSection-icon">
                     <svg className={"w-full max-w-[500px] h-auto block mt-0 mx-auto my-0"} width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -309,6 +303,7 @@ function FeaturesSection() {
                         <path d="M151.731 171.65C153.321 170.73 154.591 171.54 154.491 173.42L154.351 176.42L158.571 173.98C160.021 173.14 160.331 175.07 159.351 176.43C160.351 176.72 160.051 178.43 159.161 179.43C159.981 179.8 159.251 181.7 158.251 182.49C158.911 182.76 158.341 184.79 157.191 185.49L153.031 187.89L150.411 189.4C149.511 189.92 148.781 189.5 148.781 188.47V182.47L150.441 178.47C151.271 176.544 151.719 174.476 151.761 172.38L151.731 171.65Z" fill="white"/>
                     </svg>
                 </div>
+
             </div>
         </div>
 
