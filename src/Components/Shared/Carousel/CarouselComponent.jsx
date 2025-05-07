@@ -17,7 +17,7 @@ const ButtonGroup = ({ next, previous, ...rest }) => {
                         onClick={() => previous()}
                         disabled={currentSlide === 0}
                     >
-                        <svg width="40" height="40" viewBox="0 0 62 62" fill="none">
+                        <svg width="61" height="61" viewBox="0 0 62 62" fill="none">
                             <path d="M33.0613 21.1387L42.2266 30.3039M42.2266 30.3039L33.0613 39.4692M42.2266 30.3039H19.3135" stroke="#501A60" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
                         </svg>
                     </button>
@@ -26,7 +26,7 @@ const ButtonGroup = ({ next, previous, ...rest }) => {
                         onClick={() => next()}
                         disabled={currentSlide >= totalSlides - slidesToShow}
                     >
-                        <svg width="40" height="40" viewBox="0 0 63 62" fill="none">
+                        <svg width="61" height="61" viewBox="0 0 63 62" fill="none">
                             <path d="M29.134 21.1385L19.9688 30.3039M19.9688 30.3039L29.134 39.4691M19.9688 30.3039H42.8818" stroke="#501A60" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
                         </svg>
 
@@ -39,7 +39,7 @@ const ButtonGroup = ({ next, previous, ...rest }) => {
                         onClick={() => previous()}
                         disabled={currentSlide === 0}
                     >
-                        <svg width="40" height="40" viewBox="0 0 62 62" fill="none">
+                        <svg width="61" height="61" viewBox="0 0 62 62" fill="none">
                             <path d="M33.0613 21.1387L42.2266 30.3039M42.2266 30.3039L33.0613 39.4692M42.2266 30.3039H19.3135" stroke="#501A60" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
                         </svg>
                     </button>
@@ -48,7 +48,7 @@ const ButtonGroup = ({ next, previous, ...rest }) => {
                         onClick={() => next()}
                         disabled={currentSlide >= totalSlides - slidesToShow}
                     >
-                        <svg width="40" height="40" viewBox="0 0 63 62" fill="none">
+                        <svg width="61" height="61" viewBox="0 0 63 62" fill="none">
                             <path d="M29.134 21.1385L19.9688 30.3039M19.9688 30.3039L29.134 39.4691M19.9688 30.3039H42.8818" stroke="#501A60" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
                         </svg>
 

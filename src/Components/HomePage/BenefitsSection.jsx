@@ -2,7 +2,7 @@ import React from 'react'
 
 function BenefitsSection() {
     return (
-        <div className={"flex justify-between items-center relative p-[3em] "}>
+        <div className={"flex justify-between items-center relative p-[3em] lg:pt-[11em] "}>
             <div className="benefitsSection-container flex justify-between z-10 w-full items-center" >
                 <div className="benefitsSection-icon">
                     <svg className={"w-full max-w-[500px] h-auto block mt-0 mx-auto my-0"} width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">

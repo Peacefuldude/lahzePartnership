@@ -26,8 +26,8 @@
     position: relative;
     background: transparent;
     border: none;
-    width: 40px;
-    height: 40px;
+    width: 61px;
+    height: 61px;
 }
 .carousel-item{
     padding: 10px;
@@ -35,7 +35,7 @@
 /* Desktop/tablet buttons (centered bottom) */
 .carousel-button-container.desktop {
     position: absolute;
-    bottom: 20px;
+    bottom: 0;
     left: 0;
     right: 0;
     display: flex;
@@ -47,8 +47,8 @@
 .carousel-button-container.desktop .carousel-button {
     background: transparent;
     border: none;
-    width: 40px;
-    height: 40px;
+    width: 61px;
+    height: 61px;
 }
 
 /* Common styles */

@@ -2,7 +2,7 @@ import React from 'react'
 
 function FeaturesSection() {
     return (
-        <div className={"flex justify-between items-center relative p-[3em]"}>
+        <div className={"flex justify-between items-center relative p-[3em] lg:pt-[11em]]"}>
             <div className="featuresSection-container flex justify-between z-10 w-full items-center" >
                 <div className="featuresSection-description">
                     <div className={"font-bold text-[1.9rem] md:text-[2rem] mb-6"}>نمایندگی فروش گیفت‌کارت برای آژانس‌های تبلیغاتی</div>

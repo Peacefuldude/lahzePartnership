@@ -7,7 +7,7 @@ function CarouselSection() {
             <div className={"font-bold text-[2rem] text-center"}>
                 برای همکاری با لحظه کارت آماده‌ایم!
             </div>
-            <div className={"text-[1rem]v text-center"}>
+            <div className={"mb-[2em] text-[1rem]v text-center"}>
                 زیرساخت فروش گیفت کارت را همین امروز با لحظه کارت راه‌اندازی کنید
             </div>
             <CarouselComponent/>
