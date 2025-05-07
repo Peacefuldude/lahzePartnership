@@ -5,7 +5,6 @@
     padding: 0 60px;
 }
 
-/* Mobile buttons (on sides) */
 .carousel-button-container.mobile {
     position: absolute;
     width: 100%;
@@ -16,10 +15,14 @@
     justify-content: space-between;
     padding: 0 10px;
     pointer-events: none;
-    z-index: 2; /* Ensure buttons stay above cards */
+    z-index: 2;
 }
 .carousel-brand-icon{
     width: 39px !important;
+}
+.carousel-text{
+    direction: rtl;
+    text-align: center;
 }
 .carousel-button-container.mobile .carousel-button {
     pointer-events: auto;
@@ -32,7 +35,6 @@
 .carousel-item{
     padding: 10px;
 }
-/* Desktop/tablet buttons (centered bottom) */
 .carousel-button-container.desktop {
     position: absolute;
     bottom: 0;
@@ -41,7 +43,7 @@
     display: flex;
     justify-content: center;
     gap: 20px;
-    z-index: 2; /* Ensure buttons stay above cards */
+    z-index: 2;
 }
 
 .carousel-button-container.desktop .carousel-button {
@@ -51,14 +53,13 @@
     height: 61px;
 }
 
-/* Common styles */
 .carousel-button.disabled {
     opacity: 0.5;
     cursor: not-allowed;
 }
 
 .carousel-container {
-    padding-bottom: 80px; /* Space for bottom buttons */
+    padding-bottom: 80px;
 }
 
 .testimonial-card {
@@ -70,12 +71,11 @@
     padding: 20px;
     box-shadow: 0 4px 12px rgba(138, 43, 226, 0.2),
     0 8px 24px rgba(138, 43, 226, 0.15);
-    position: relative; /* Add this */
-    z-index: 1; /* Add this */
-    transform: translateZ(0); /* Force hardware acceleration */
+    position: relative;
+    z-index: 1;
+    transform: translateZ(0);
 }
 
-/* Mobile adjustments */
 @media (max-width: 900px) {
     .carousel-wrapper {
         padding: 0 40px;
@@ -85,7 +85,7 @@
     }
     .testimonial-card {
         width: 184px;
-        height: auto;
+        height: 213px;
         min-height: 250px;
     }
 }

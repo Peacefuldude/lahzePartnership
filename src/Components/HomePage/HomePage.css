@@ -13,6 +13,11 @@
 
 
 @media screen and (max-width: 1024px) {
+    .homePage-divider-svg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .hero-background {
         background:
                 radial-gradient(
