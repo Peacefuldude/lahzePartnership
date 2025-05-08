@@ -11,6 +11,10 @@
 
     }
 
+    .footer-group{
+        margin-top: 2em;
+    }
+
     .footer-group:nth-child(1) {
         order: 6 !important;
     }
@@ -33,11 +37,11 @@
     }
 
     .footer-svg2 svg {
-        height: 67px !important;
+        height: 80px !important;
     }
 
     .footer-svg3 svg {
-        height: 42px !important;
+        height: 55px !important;
     }
 
     .footer-logo-icon svg {
@@ -53,7 +57,7 @@
 
     .footer-logo-icon {
         top: -45px !important;
-        left: 1rem !important;
+        left: 3rem !important;
     }
 }
 

@@ -29,16 +29,17 @@ function MobileMenu() {
             >
 
                 <div className="p-4">
-                    <div className="mb-4 mt-5 text-white font-medium text-[1rem] hover:cursor-pointer hover:text-opacity-80 transition-colors duration-200">
+                    <div className="mb-9 mt-5 text-white font-medium text-[1.3rem] hover:cursor-pointer hover:text-opacity-80 transition-colors duration-200">
                         همکاری با ما
                     </div>
-                    <div className="mb-4 text-white font-medium text-[1rem] hover:cursor-pointer hover:text-opacity-80 transition-colors duration-200">
+
+                    <div className="mb-9 text-white font-medium text-[1.3rem] hover:cursor-pointer hover:text-opacity-80 transition-colors duration-200">
                         سوالات متداول
                     </div>
-                    <div className="mb-4 text-white font-medium text-[1rem] hover:cursor-pointer hover:text-opacity-80 transition-colors duration-200">
+                    <div className="mb-9 text-white font-medium text-[1.3rem] hover:cursor-pointer hover:text-opacity-80 transition-colors duration-200">
                         درباره ما
                     </div>
-                    <div className="mb-4 text-white font-medium text-[1rem] hover:cursor-pointer hover:text-opacity-80 transition-colors duration-200">
+                    <div className="mb-9 text-white font-medium text-[1.3rem] hover:cursor-pointer hover:text-opacity-80 transition-colors duration-200">
                         ورود | ثبت نام
                     </div>
                 </div>
