@@ -30,12 +30,15 @@ function GiftCardSection() {
                 </div>
             </div>
             <div className="giftCardSection-buttons text-center md:pt-[2.5em]">
-                <button
-                    className="bg-white h-[48px] w-[174px] m-2 rounded-full hover:cursor-pointer hover:shadow-xl transition-shadow duration-300 ease-in-out">
-                    <div>
-                        تماس با ما
-                    </div>
-                </button>
+                <a href="https://wa.me/989367663655?text=hey%20can%20you%20help%20me%3F" target="_blank" rel="noopener noreferrer">
+                    <button
+                        className="bg-white h-[48px] w-[174px] m-2 rounded-full hover:cursor-pointer hover:shadow-xl transition-shadow duration-300 ease-in-out">
+                        <div>
+                            تماس با ما
+                        </div>
+                    </button>
+
+                </a>
                 <button className="
                     bg-[#501A60] text-white h-[48px] w-[372px] m-2 rounded-full
                     hover:cursor-pointer hover:shadow-xl
