@@ -3,19 +3,19 @@ import GiftCardSection from "./GiftCardSection.jsx";
 import FeaturedBrandsSection from "./FeaturedBrandsSection.jsx";
 import BenefitsSection from "./BenefitsSection.jsx";
 import FeaturesSection from "./FeaturesSection.jsx";
-import './HomePage.css'
+import styles from './Hamkari.module.css'
 import CarouselSection from "./CarouselSection.jsx";
 function HomePage() {
     return (
-        <div>
+        <div className={styles.homePage_container}>
             <div
-                className={"hero_background"}
+                className={styles.hero_background}
             >
                 <GiftCardSection/>
                 <FeaturedBrandsSection/>
             </div>
             <BenefitsSection/>
-            <div className={"homePage_divider_svg"}>
+            <div className={styles.homePage_divider_svg}>
                 <svg
                     width="75%"
                     height="17"
@@ -47,7 +47,7 @@ function HomePage() {
             </div>
             <FeaturesSection />
             <div>
-                <img className={"homePage_standalone_image"} src="../src/assets/image 4.svg" alt=""/>
+                <img className={styles.homePage_standalone_image} src="../src/assets/image 4.svg" alt=""/>
             </div>
             <CarouselSection/>
         </div>

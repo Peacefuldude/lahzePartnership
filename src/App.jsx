@@ -6,13 +6,8 @@ import HomePage from "./Components/HomePage/HomePage.jsx";
 function App() {
     return (
         <div
-            className="overflow-hidden relative min-h-screen bg-cover bg-no-repeat bg-center flex flex-col justify-between lg:bg-[url('./src/assets/background.png')]"
-            // style={{backgroundImage: 'url("src/assets/backgroundkk(3).png")'}}
         >
-            <Header/>
             <HomePage/>
-            <Footer/>
-
         </div>
 
     )

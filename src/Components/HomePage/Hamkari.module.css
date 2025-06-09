@@ -1,4 +1,21 @@
 /*---------HOME PAGE---------*/
+.homePage_container {
+    overflow: hidden;
+    position: relative;
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media (min-width: 1024px) {
+    .homePage_container {
+        background-image: url('./src/assets/background.png');
+    }
+}
 .homePage_divider_svg{
     display: none;
 }
@@ -15,11 +32,11 @@ padding: 3em;
 align-items: stretch;
 text-align: center;
 }
-.featuredBrandsSection-header{
+.featuredBrandsSection_header{
         font-weight: 700;
         font-size: 2rem;
 }
-.featuredBrandsSection-description{
+.featuredBrandsSection_description{
     font-size: 1.2rem;
 }
 .featuredBrandsSection_brands{

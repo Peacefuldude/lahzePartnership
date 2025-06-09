@@ -1,19 +1,19 @@
 import React from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import './CarouselComponent.css';
+import styles from './CommentsCarouselComponent.module.css';
 
 const ButtonGroup = ({ next, previous, ...rest }) => {
     const { carouselState: { currentSlide, slidesToShow } } = rest;
     const totalSlides = rest.carouselState.totalItems;
     const isMobile = rest.carouselState.deviceType === 'tablet' || rest.carouselState.deviceType === 'mobile';
-    console.log(rest.carouselState.deviceType)
+
     return (
-        <div className={`carousel_button_container ${isMobile ? 'mobile' : 'desktop'}`}>
+        <div className={`${styles.carousel_button_container} ${isMobile ? styles.mobile : styles.desktop}`}>
             {isMobile ? (
                 <>
                     <button
-                        className={`carousel_button prev-button ${currentSlide === 0 ? 'disabled' : ''}`}
+                        className={`${styles.carousel_button} ${styles.prev_button} ${currentSlide === 0 ? styles.disabled : ''}`}
                         onClick={() => previous()}
                         disabled={currentSlide === 0}
                     >
@@ -22,20 +22,19 @@ const ButtonGroup = ({ next, previous, ...rest }) => {
                         </svg>
                     </button>
                     <button
-                        className={`carousel_button next-button ${currentSlide >= totalSlides - slidesToShow ? 'disabled' : ''}`}
+                        className={`${styles.carousel_button} ${styles.next_button} ${currentSlide >= totalSlides - slidesToShow ? styles.disabled : ''}`}
                         onClick={() => next()}
                         disabled={currentSlide >= totalSlides - slidesToShow}
                     >
                         <svg width="61" height="61" viewBox="0 0 63 62" fill="none">
                             <path d="M29.134 21.1385L19.9688 30.3039M19.9688 30.3039L29.134 39.4691M19.9688 30.3039H42.8818" stroke="#501A60" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
                         </svg>
-
                     </button>
                 </>
             ) : (
-                <div className="center-buttons">
+                <div className={styles.center_buttons}>
                     <button
-                        className={`carousel_button ${currentSlide === 0 ? 'disabled' : ''}`}
+                        className={`${styles.carousel_button} ${currentSlide === 0 ? styles.disabled : ''}`}
                         onClick={() => previous()}
                         disabled={currentSlide === 0}
                     >
@@ -44,21 +43,21 @@ const ButtonGroup = ({ next, previous, ...rest }) => {
                         </svg>
                     </button>
                     <button
-                        className={`carousel_button ${currentSlide >= totalSlides - slidesToShow ? 'disabled' : ''}`}
+                        className={`${styles.carousel_button} ${currentSlide >= totalSlides - slidesToShow ? styles.disabled : ''}`}
                         onClick={() => next()}
                         disabled={currentSlide >= totalSlides - slidesToShow}
                     >
                         <svg width="61" height="61" viewBox="0 0 63 62" fill="none">
                             <path d="M29.134 21.1385L19.9688 30.3039M19.9688 30.3039L29.134 39.4691M19.9688 30.3039H42.8818" stroke="#501A60" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
                         </svg>
-
                     </button>
                 </div>
             )}
         </div>
     );
 };
-const CarouselComponent = () => {
+
+const CommentsCarouselComponent = () => {
     const testimonials = [
         { id: 1, name: "رستوان چیلی", text: "همکاری با لحظه کارت برای ما تجربه‌ای سریع، حرفه‌ای و فراتر از انتظار بود. تیمی خلاق و مسئولیت‌پذیر که همیشه یک قدم جلوتر فکر می‌کنند.", rating: 4, avatar: "../src/assets/carousel/logo.png" },
         { id: 2, name: "رستوان چیلی", text: "همکاری با لحظه کارت برای ما تجربه‌ای سریع، حرفه‌ای و فراتر از انتظار بود. تیمی خلاق و مسئولیت‌پذیر که همیشه یک قدم جلوتر فکر می‌کنند.", rating: 5, avatar: "../src/assets/carousel/logo.png" },
@@ -76,7 +75,7 @@ const CarouselComponent = () => {
             viewBox="0 0 33 33"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="mx-1"
+            className={styles.mx_1}
         >
             <path
                 d="M14.1707 9.92737C15.0536 7.72643 15.495 6.62596 16.2122 6.47344C16.4007 6.43333 16.5956 6.43333 16.7842 6.47344C17.5014 6.62596 17.9428 7.72643 18.8257 9.92737C19.3277 11.179 19.5788 11.8048 20.0485 12.2305C20.1802 12.3499 20.3232 12.4562 20.4755 12.548C21.0184 12.8752 21.6962 12.9359 23.0516 13.0573C25.3462 13.2628 26.4934 13.3655 26.8438 14.0197C26.9163 14.1552 26.9657 14.3018 26.9897 14.4536C27.1059 15.1865 26.2625 15.9539 24.5756 17.4885L24.1072 17.9147C23.3186 18.6322 22.9243 18.9909 22.6962 19.4386C22.5594 19.7072 22.4676 19.9964 22.4247 20.2948C22.353 20.7921 22.4685 21.3125 22.6994 22.3534L22.7819 22.7252C23.1961 24.5918 23.4031 25.5252 23.1446 25.9839C22.9125 26.396 22.4848 26.6598 22.0123 26.6824C21.4863 26.7075 20.7452 26.1036 19.263 24.8958C18.2865 24.1 17.7982 23.7022 17.2562 23.5468C16.7608 23.4047 16.2356 23.4047 15.7402 23.5468C15.1982 23.7022 14.7099 24.1 13.7334 24.8958C12.2512 26.1036 11.51 26.7075 10.9841 26.6824C10.5116 26.6598 10.0839 26.396 9.85175 25.9839C9.59326 25.5252 9.80033 24.5919 10.2145 22.7252L10.297 22.3534C10.5279 21.3125 10.6434 20.7921 10.5717 20.2948C10.5288 19.9964 10.437 19.7072 10.3002 19.4386C10.0721 18.9909 9.67781 18.6322 8.88919 17.9147L8.42077 17.4885C6.73393 15.9539 5.89051 15.1865 6.00666 14.4536C6.03072 14.3018 6.08005 14.1552 6.15261 14.0197C6.50296 13.3655 7.65024 13.2628 9.94478 13.0573C11.3002 12.9359 11.978 12.8752 12.5209 12.548C12.6731 12.4562 12.8162 12.3499 12.9479 12.2305C13.4176 11.8048 13.6687 11.179 14.1707 9.92737Z"
@@ -87,40 +86,40 @@ const CarouselComponent = () => {
         </svg>
     );
 
-        const responsive = {
-            desktop: {
-                breakpoint: { max: 3000, min: 1024 },
-                items: 3
-            },
-            tablet: {
-                breakpoint: { max: 1024, min: 768 },
-                items: 2
-            },
-            mobile: {
-                breakpoint: { max: 768, min: 0 },
-                items: 1
-            }
-        };
+    const responsive = {
+        desktop: {
+            breakpoint: { max: 3000, min: 1024 },
+            items: 3
+        },
+        tablet: {
+            breakpoint: { max: 1024, min: 768 },
+            items: 2
+        },
+        mobile: {
+            breakpoint: { max: 768, min: 0 },
+            items: 1
+        }
+    };
 
-        return (
-        <div className="carousel_container">
+    return (
+        <div className={styles.carousel_container}>
             <Carousel
                 responsive={responsive}
                 infinite={false}
                 arrows={false}
                 customButtonGroup={<ButtonGroup />}
                 renderButtonGroupOutside={true}
-                containerClass="carousel-container"
-                itemClass="carousel-item"
+                containerClass={styles.carousel_container_class}
+                itemClass={styles.carousel_item}
             >
                 {testimonials.map((testimonial) => (
-                    <div key={testimonial.id} className="testimonial_card">
-                        <div className="testimonial_card-content ">
-                            <img className={"carousel_brand_icon"} src={testimonial.avatar} alt={testimonial.name} />
-                            <div className="testimonial_card-content-header">{testimonial.name}</div>
+                    <div key={testimonial.id} className={styles.testimonial_card}>
+                        <div className={styles.testimonial_card_content}>
+                            <img className={styles.carousel_brand_icon} src={testimonial.avatar} alt={testimonial.name} />
+                            <div className={styles.testimonial_card_content_header}>{testimonial.name}</div>
                         </div>
-                        <div className="carousel_text">{testimonial.text}</div>
-                        <div className="carousel-stars">
+                        <div className={styles.carousel_text}>{testimonial.text}</div>
+                        <div className={styles.carousel_stars}>
                             {[...Array(5)].map((_, index) => (
                                 <StarIcon key={index} />
                             ))}
@@ -132,4 +131,4 @@ const CarouselComponent = () => {
     );
 };
 
-export default CarouselComponent;
+export default CommentsCarouselComponent;

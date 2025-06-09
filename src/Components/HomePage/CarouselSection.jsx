@@ -1,16 +1,16 @@
 import React from 'react'
-import CarouselComponent from "../Shared/Carousel/CarouselComponent.jsx";
-
+import CommentsCarouselComponent from "../Shared/Carousel/CommentsCarouselComponent.jsx";
+import styles from './Hamkari.module.css'
 function CarouselSection() {
     return (
-        <div className={"commentsCarouselSection_container"}>
-            <div className={"commentsCarouselSection_header"}>
+        <div className={styles.commentsCarouselSection_container}>
+            <div className={styles.commentsCarouselSection_header}>
                 برای همکاری با لحظه کارت آماده‌ایم!
             </div>
-            <div className={"commentsCarouselSection_description"}>
+            <div className={styles.commentsCarouselSection_description}>
                 زیرساخت فروش گیفت کارت را همین امروز با لحظه کارت راه‌اندازی کنید
             </div>
-            <CarouselComponent/>
+            <CommentsCarouselComponent/>
 
         </div>
     )

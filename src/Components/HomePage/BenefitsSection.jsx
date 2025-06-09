@@ -1,10 +1,10 @@
 import React from 'react'
-
+import styles from './Hamkari.module.css'
 function BenefitsSection() {
     return (
-        <div className={"benefitsSection_container "}>
-            <div className="benefitsSection_content" >
-                <div className="benefitsSection_icon">
+        <div className={styles.benefitsSection_container}>
+            <div className={styles.benefitsSection_content}>
+                <div className={styles.benefitsSection_icon}>
                     <svg width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M365.859 434.18L337.469 417.79C335.349 416.56 335.349 414.58 337.469 413.35L443.839 351.93C445.031 351.329 446.348 351.016 447.684 351.016C449.019 351.016 450.336 351.329 451.529 351.93L479.919 368.32C482.039 369.55 482.039 371.54 479.919 372.76L431.999 400.44L373.559 434.18C372.367 434.789 371.047 435.106 369.709 435.106C368.37 435.106 367.051 434.789 365.859 434.18Z" fill="#EBEBEB"/>
                         <path d="M144.721 422.52L208.361 459.3C209.089 459.67 209.894 459.863 210.711 459.863C211.528 459.863 212.333 459.67 213.061 459.3L253.401 436.11L275.791 423.18C277.091 422.43 277.091 421.18 275.791 420.47L212.151 383.69C211.423 383.321 210.618 383.128 209.801 383.128C208.984 383.128 208.179 383.321 207.451 383.69L144.721 419.81C143.421 420.56 143.421 421.77 144.721 422.52Z" fill="#EBEBEB"/>
@@ -201,8 +201,8 @@ function BenefitsSection() {
                     </svg>
                 </div>
                 <div>
-                    <div className={"benefitsSection_description_header"}>لحظه کارت به کسب و کار شما چه کمکی میکند ؟</div>
-                    <div className="benefitsSection_group">
+                    <div className={styles.benefitsSection_description_header}>لحظه کارت به کسب و کار شما چه کمکی میکند ؟</div>
+                    <div className={styles.benefitsSection_group}>
                         <div>
                             <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -214,7 +214,7 @@ function BenefitsSection() {
                             افزایش فروش و جذب مشتری جدید
                         </div>
                     </div>
-                    <div className="benefitsSection_group">
+                    <div className={styles.benefitsSection_group}>
                         <div>
                             <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -227,7 +227,7 @@ function BenefitsSection() {
                             ابزار مؤثر برای وفادارسازی مشتریان
                         </div>
                     </div>
-                    <div className="benefitsSection_group">
+                    <div className={styles.benefitsSection_group}>
                         <div>
                             <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -239,7 +239,7 @@ function BenefitsSection() {
                             تبلیغ برند بدون هزینه‌ی مستقیم
                         </div>
                     </div>
-                    <div className="benefitsSection_group">
+                    <div className={styles.benefitsSection_group}>
                         <div>
                             <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -251,7 +251,7 @@ function BenefitsSection() {
                             قابل استفاده در کمپین‌های بازاریابی متنوع
                         </div>
                     </div>
-                    <div className="benefitsSection_group">
+                    <div className={styles.benefitsSection_group}>
                         <div>
                             <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path

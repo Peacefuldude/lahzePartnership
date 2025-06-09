@@ -1,5 +1,5 @@
 import React from 'react'
-import './HomePage.css'
+import './Hamkari.module.css'
 
 function GiftCardSection() {
     return (

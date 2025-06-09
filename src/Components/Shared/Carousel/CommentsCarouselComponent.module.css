@@ -28,7 +28,7 @@
 .carousel_button{
     cursor: pointer;
 }
-.carousel-stars{
+.carousel_stars{
     display: flex;
 }
 .carousel_button_container.mobile .carousel_button {
@@ -52,6 +52,7 @@
     gap: 20px;
     z-index: 2;
 }
+
 
 .carousel_button_container.desktop .carousel_button {
     background: transparent;
@@ -85,13 +86,13 @@
     z-index: 1;
     transform: translateZ(0);
 }
-.testimonial_card-content{
+.testimonial_card_content{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
-.testimonial_card-content-header{
+.testimonial_card_content_header{
     font-weight: 700;
     font-size: 1.3rem;
 }
@@ -114,4 +115,8 @@
         height: 213px;
         min-height: 250px;
     }
+}
+
+:global(.react-multi-carousel-list) {
+    padding: 2rem 0;
 }
