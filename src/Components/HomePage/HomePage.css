@@ -105,6 +105,77 @@ text-align: center;
         font-size: 1.3rem!important;
     }
 }
+/*-----FEATURES SECTION-----*/
+.featuresSection_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 3em;
+}
+@media (min-width: 1024px) {
+    padding-top: 11em!important;
+}
+.featuresSection_content{
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+    width: 100%;
+    align-items: center;
+}
+.featuresSection_description_header{
+    font-weight: 700;
+    font-size: 1.9rem;
+    margin-bottom: 1.5rem;
+}
+@media (min-width: 768px) {
+    .featuresSection_description_header{
+        font-size: 2rem !important;
+    }
+}
+.featuresSection_group{
+    text-align: center;
+    display: flex;
+    gap: 1rem;
+    margin: 0.5rem 0;
+}
+.featuresSection_group div{
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+@media (min-width: 640px) {
+    .featuresSection_group div{
+        font-size: 1.3rem!important;
+    }
+}
+.featuresSection_icon svg{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/*----COMMENTS CAROUSEL SECTION----*/
+.commentsCarouselSection_container{
+    margin-bottom: 1.5rem;
+}
+@media (min-width: 1024px) {
+    .commentsCarouselSection_container{
+        margin-top: -90px;
+    }
+}
+.commentsCarouselSection_header{
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+}
+.commentsCarouselSection_description{
+    margin-bottom: 2em;
+    font-size: 1rem;
+    text-align: center;
+}
+
 /*======MEDIA=====*/
 @media screen and (max-width: 1024px) {
     .giftCardSection_buttons a{
@@ -180,7 +251,7 @@ text-align: center;
         max-width: 300px;
     }
 
-    .featuresSection_container {
+    .featuresSection_content {
         flex-direction: column-reverse;
     }
 

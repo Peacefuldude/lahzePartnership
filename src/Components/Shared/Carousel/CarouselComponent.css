@@ -1,11 +1,11 @@
-.carousel-wrapper {
+.carousel_container {
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 60px;
 }
 
-.carousel-button-container.mobile {
+.carousel_button_container.mobile {
     position: absolute;
     width: 100%;
     top: 50%;
@@ -17,14 +17,21 @@
     pointer-events: none;
     z-index: 2;
 }
-.carousel-brand-icon{
+.carousel_brand_icon{
     width: 56px !important;
 }
-.carousel-text{
+.carousel_text{
     direction: rtl;
+    font-weight: 600;
     text-align: center;
 }
-.carousel-button-container.mobile .carousel-button {
+.carousel_button{
+    cursor: pointer;
+}
+.carousel-stars{
+    display: flex;
+}
+.carousel_button_container.mobile .carousel_button {
     pointer-events: auto;
     position: relative;
     background: transparent;
@@ -35,7 +42,7 @@
 .carousel-item{
     padding: 10px;
 }
-.carousel-button-container.desktop {
+.carousel_button_container.desktop {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -46,23 +53,26 @@
     z-index: 2;
 }
 
-.carousel-button-container.desktop .carousel-button {
+.carousel_button_container.desktop .carousel_button {
     background: transparent;
     border: none;
     width: 61px;
     height: 61px;
 }
 
-.carousel-button.disabled {
+.carousel_button.disabled {
     opacity: 0.5;
     cursor: not-allowed;
 }
 
-.carousel-container {
+.carousel_container {
     padding-bottom: 80px;
 }
 
-.testimonial-card {
+.testimonial_card {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
     width: 258px;
     height: 299px;
     margin: 0 auto;
@@ -75,18 +85,31 @@
     z-index: 1;
     transform: translateZ(0);
 }
+.testimonial_card-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.testimonial_card-content-header{
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+.react-multi-carousel-track{
+    padding-bottom: 3rem;
+}
 
 @media (max-width: 900px) {
-    .carousel-brand-icon{
+    .carousel_brand_icon{
         width: 39px !important;
     }
-    .carousel-wrapper {
+    .carousel_container {
         padding: 0 40px;
     }
-    .carousel-container {
+    .carousel_container {
         padding-bottom: 20px;
     }
-    .testimonial-card {
+    .testimonial_card {
         width: 184px;
         height: 213px;
         min-height: 250px;

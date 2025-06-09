@@ -3,11 +3,11 @@ import CarouselComponent from "../Shared/Carousel/CarouselComponent.jsx";
 
 function CarouselSection() {
     return (
-        <div className={"lg:mt-[-90px] mb-6"}>
-            <div className={"font-bold text-[2rem] text-center"}>
+        <div className={"commentsCarouselSection_container"}>
+            <div className={"commentsCarouselSection_header"}>
                 برای همکاری با لحظه کارت آماده‌ایم!
             </div>
-            <div className={"mb-[2em] text-[1rem]v text-center"}>
+            <div className={"commentsCarouselSection_description"}>
                 زیرساخت فروش گیفت کارت را همین امروز با لحظه کارت راه‌اندازی کنید
             </div>
             <CarouselComponent/>

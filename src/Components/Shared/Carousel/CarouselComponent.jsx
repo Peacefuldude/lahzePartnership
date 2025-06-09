@@ -9,11 +9,11 @@ const ButtonGroup = ({ next, previous, ...rest }) => {
     const isMobile = rest.carouselState.deviceType === 'tablet' || rest.carouselState.deviceType === 'mobile';
     console.log(rest.carouselState.deviceType)
     return (
-        <div className={`carousel-button-container ${isMobile ? 'mobile' : 'desktop'}`}>
+        <div className={`carousel_button_container ${isMobile ? 'mobile' : 'desktop'}`}>
             {isMobile ? (
                 <>
                     <button
-                        className={`carousel-button prev-button ${currentSlide === 0 ? 'disabled' : ''}`}
+                        className={`carousel_button prev-button ${currentSlide === 0 ? 'disabled' : ''}`}
                         onClick={() => previous()}
                         disabled={currentSlide === 0}
                     >
@@ -22,7 +22,7 @@ const ButtonGroup = ({ next, previous, ...rest }) => {
                         </svg>
                     </button>
                     <button
-                        className={`carousel-button next-button ${currentSlide >= totalSlides - slidesToShow ? 'disabled' : ''}`}
+                        className={`carousel_button next-button ${currentSlide >= totalSlides - slidesToShow ? 'disabled' : ''}`}
                         onClick={() => next()}
                         disabled={currentSlide >= totalSlides - slidesToShow}
                     >
@@ -35,7 +35,7 @@ const ButtonGroup = ({ next, previous, ...rest }) => {
             ) : (
                 <div className="center-buttons">
                     <button
-                        className={`carousel-button ${currentSlide === 0 ? 'disabled' : ''}`}
+                        className={`carousel_button ${currentSlide === 0 ? 'disabled' : ''}`}
                         onClick={() => previous()}
                         disabled={currentSlide === 0}
                     >
@@ -44,7 +44,7 @@ const ButtonGroup = ({ next, previous, ...rest }) => {
                         </svg>
                     </button>
                     <button
-                        className={`carousel-button ${currentSlide >= totalSlides - slidesToShow ? 'disabled' : ''}`}
+                        className={`carousel_button ${currentSlide >= totalSlides - slidesToShow ? 'disabled' : ''}`}
                         onClick={() => next()}
                         disabled={currentSlide >= totalSlides - slidesToShow}
                     >
@@ -103,7 +103,7 @@ const CarouselComponent = () => {
         };
 
         return (
-        <div className="carousel-wrapper">
+        <div className="carousel_container">
             <Carousel
                 responsive={responsive}
                 infinite={false}
@@ -114,13 +114,13 @@ const CarouselComponent = () => {
                 itemClass="carousel-item"
             >
                 {testimonials.map((testimonial) => (
-                    <div key={testimonial.id} className="testimonial-card flex justify-between flex-col">
-                        <div className="flex flex-row justify-between items-center">
-                            <img className={"carousel-brand-icon"} src={testimonial.avatar} alt={testimonial.name} />
-                            <div className="font-bold text-[1.3rem]">{testimonial.name}</div>
+                    <div key={testimonial.id} className="testimonial_card">
+                        <div className="testimonial_card-content ">
+                            <img className={"carousel_brand_icon"} src={testimonial.avatar} alt={testimonial.name} />
+                            <div className="testimonial_card-content-header">{testimonial.name}</div>
                         </div>
-                        <div className="carousel-text font-semibold p-2">{testimonial.text}</div>
-                        <div className="flex">
+                        <div className="carousel_text">{testimonial.text}</div>
+                        <div className="carousel-stars">
                             {[...Array(5)].map((_, index) => (
                                 <StarIcon key={index} />
                             ))}
