@@ -3,10 +3,10 @@ import React from 'react'
 function FeaturesSection() {
     return (
         <div className={"flex justify-between items-center relative p-[3em] lg:pt-[11em]]"}>
-            <div className="featuresSection-container flex justify-between z-10 w-full items-center" >
+            <div className="featuresSection_container flex justify-between z-10 w-full items-center" >
                 <div className="featuresSection-description">
                     <div className={"font-bold text-[1.9rem] md:text-[2rem] mb-6"}>نمایندگی فروش گیفت‌کارت برای آژانس‌های تبلیغاتی</div>
-                    <div className="featuresSection-group items-center flex gap-3 text[2rem] my-2">
+                    <div className="featuresSection_group items-center flex gap-3 text[2rem] my-2">
                         <div>
                             <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -18,7 +18,7 @@ function FeaturesSection() {
 
                             دسترسی به پنل اختصاصی با نام برند شما                        </div>
                     </div>
-                    <div className="featuresSection-group items-center flex gap-3 text[2rem] my-2">
+                    <div className="featuresSection_group items-center flex gap-3 text[2rem] my-2">
                         <div>
                             <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -29,7 +29,7 @@ function FeaturesSection() {
                         <div className={"font-semibold text-[1.5rem] sm:text-[1.3em]"}>
                             امکان صدور و فروش مستقیم گیفت‌کارت به کسب‌وکارهای طرف همکاری‌تان                        </div>
                     </div>
-                    <div className="featuresSection-group items-center flex gap-3 text[2rem] my-2">
+                    <div className="featuresSection_group items-center flex gap-3 text[2rem] my-2">
                         <div>
                             <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -40,7 +40,7 @@ function FeaturesSection() {
                         <div className={"font-semibold text-[1.5rem] sm:text-[1.3em]"}>
                             افزایش ارزش خدمات بازاریابی شما با یک ابزار جذاب                        </div>
                     </div>
-                    <div className="featuresSection-group items-center flex gap-3 text[2rem] my-2">
+                    <div className="featuresSection_group items-center flex gap-3 text[2rem] my-2">
                         <div>
                             <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -51,7 +51,7 @@ function FeaturesSection() {
                         <div className={"font-semibold text-[1.5rem] sm:text-[1.3em]"}>
                             درآمد مستقل از فروش گیفت‌کارت به‌عنوان نماینده‌ی رسمی لحظه‌کارت                        </div>
                     </div>
-                    <div className="featuresSection-group items-center flex gap-3 text[2rem] my-2">
+                    <div className="featuresSection_group items-center flex gap-3 text[2rem] my-2">
                         <div>
                             <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -64,7 +64,7 @@ function FeaturesSection() {
                     </div>
 
                 </div>
-                <div className="featuresSection-icon">
+                <div className="featuresSection_icon">
                     <svg className={"w-full max-w-[500px] h-auto block mt-0 mx-auto my-0"} width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M59.0716 354.85L178.542 423.79C181.026 425.227 183.846 425.984 186.717 425.984C189.587 425.984 192.407 425.227 194.892 423.79L385.732 313.55C386.54 313.086 387.211 312.416 387.678 311.609C388.145 310.803 388.39 309.887 388.39 308.955C388.39 308.023 388.145 307.107 387.678 306.301C387.211 305.494 386.54 304.824 385.732 304.36L262.732 233.25L59.0716 350.83C58.7185 351.034 58.4253 351.326 58.2214 351.679C58.0175 352.032 57.9102 352.432 57.9102 352.84C57.9102 353.248 58.0175 353.648 58.2214 354.001C58.4253 354.354 58.7185 354.646 59.0716 354.85Z" fill="#E0E0E0"/>
                         <path d="M58.0009 337.05C57.8609 335.62 58.7309 334.16 60.6309 333.05L248.371 224.65C250.337 223.651 252.511 223.13 254.716 223.13C256.921 223.13 259.095 223.651 261.061 224.65L380.251 293.91C380.944 294.232 381.545 294.723 381.997 295.338C382.45 295.953 382.74 296.673 382.841 297.43C382.841 297.43 382.841 297.43 382.841 297.49V308.81C382.901 310.19 382.031 311.58 380.201 312.63L192.431 421C190.465 422 188.291 422.521 186.086 422.521C183.881 422.521 181.707 422 179.741 421L60.5609 351.78C59.8663 351.463 59.2635 350.974 58.8088 350.36C58.3541 349.746 58.0624 349.027 57.9609 348.27V337.06L58.0009 337.05Z" fill="#455A64"/>

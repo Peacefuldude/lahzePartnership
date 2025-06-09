@@ -8,15 +8,14 @@ import CarouselSection from "./CarouselSection.jsx";
 function HomePage() {
     return (
         <div>
-
             <div
-                className={"hero-background"}
+                className={"hero_background"}
             >
                 <GiftCardSection/>
                 <FeaturedBrandsSection/>
             </div>
             <BenefitsSection/>
-            <div className={"hidden homePage-divider-svg"}>
+            <div className={"homePage_divider_svg"}>
                 <svg
                     width="75%"
                     height="17"
@@ -47,11 +46,8 @@ function HomePage() {
 
             </div>
             <FeaturesSection />
-
-            {/*<FeaturesSection />*/}
-
             <div>
-                <img className={"w-full"} src="../src/assets/image 4.svg" alt=""/>
+                <img className={"homePage_standalone_image"} src="../src/assets/image 4.svg" alt=""/>
             </div>
             <CarouselSection/>
         </div>
