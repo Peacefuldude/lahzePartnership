@@ -22,7 +22,74 @@
 .homePage_standalone_image{
     width: 100%;
 }
+/*-----GIFTCARD SECTION----*/
+.giftcards svg {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.giftcardSection_container {
+    padding: 6rem;
+    padding-top: 11rem;
+}
+@media (min-width: 1024px) {
+    .giftcardSection_container {
+        padding-top: 9rem!important;
+    }
+}
+.giftcards{
+    padding: 3rem;
+}
+.giftCardSection_header{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-weight: 700;
+    font-size: 2.1rem;
+    padding-bottom: 0;
+}
+.giftCardSection_header span{
+    color: #E67BE6;
 
+}
+@media (min-width: 768px) {
+    .giftCardSection_header{
+        font-size: 4rem!important;
+        padding: 1.5rem!important;
+    }
+}
+.giftCardSection_descriptions{
+    text-align: center;
+    font-size: 1.5rem;
+}
+@media (min-width: 768px) {
+    .giftCardSection_descriptions{
+        font-size: 2rem!important;
+    }
+}
+.giftCardSection_buttons{
+    text-align: center;
+}
+@media (min-width: 768px) {
+    .giftCardSection_buttons{
+        padding-top: 2.5em;
+    }
+}
+.giftCardSection_button_style {
+    background-color: white;
+    height: 48px;
+    width: 174px;
+    margin: 0.5rem;
+    border-radius: 9999px;
+    cursor: pointer;
+    transition: box-shadow 300ms ease-in-out;
+}
+
+.giftCardSection_button_style:hover {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
 /*-------FEATURED BRANDS SECTION-----*/
 .featuredBrandsSection_container{
 display: flex;
